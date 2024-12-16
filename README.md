@@ -20,8 +20,12 @@ A simple React application that:
    git clone https://github.com/igalbo/forex-component.git
    ```
 2. **Install dependencies:**
-   cd usd-ils-exchange
+
+   ```bash
+     cd forex-component
    npm install
+   ```
+
 3. **Set your APP_ID:**
    In your .env file, set VITE_OER_APP_ID with your actual APP_ID
 
