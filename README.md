@@ -1,8 +1,26 @@
-# React + Vite
+# USD-ILS Exchange Rate Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+A simple React application that:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches historical USD to ILS exchange rates from the [Open Exchange Rates API](https://openexchangerates.org/).
+- Displays rates and day-by-day percentage changes over a selectable 14-day range.
+- Uses caching (`localStorage`) to reduce repeated API calls.
+
+## Prerequisites
+
+- **Node.js** and **npm** (or **yarn**)
+- A free **App ID** from [Open Exchange Rates](https://openexchangerates.org/signup/free)
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/igalbo/forex-component.git
+   ```
+2. **Install dependencies:**
+   cd usd-ils-exchange
+   npm install
+3. **Set your APP_ID:**
+   In your .env file, set VITE_OER_APP_ID with your actual APP_ID
